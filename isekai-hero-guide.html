@@ -1005,6 +1005,52 @@
       border-color: #ff7070;
       color: #ff7070;
     }
+    /* Inline citations */
+    sup.cite a {
+      font-size: 0.72em;
+      color: #7060bb;
+      text-decoration: none;
+      vertical-align: super;
+    }
+    sup.cite a:hover { color: #c8a0ff; text-decoration: underline; }
+
+    .references-list {
+      font-size: 0.88em;
+      color: #9090b0;
+      padding-left: 1.4em;
+      line-height: 1.8;
+    }
+    .references-list a { color: #7878cc; }
+    .references-list a:hover { color: #c8a0ff; }
+
+    /* Day map gallery */
+    .day-maps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .day-map {
+      margin: 0;
+    }
+    .day-map figcaption {
+      font-size: 0.85em;
+      margin-bottom: 5px;
+      color: #c0a0ff;
+      font-weight: bold;
+    }
+    .day-map figcaption .kr-day {
+      font-size: 0.82em;
+      color: #7070a0;
+      font-weight: normal;
+      margin-left: 6px;
+    }
+    .day-map img {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #252545;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -1068,7 +1114,7 @@
       <ul>
         <li><strong>Unlock the event channel first:</strong> Complete the "Ah, Great White" quest in Seria's room to access the Otherworld channel via World Tree Shrine.</li>
         <li>On your <strong>first character each week</strong>: Do 4 upper-difficulty dungeon runs BEFORE claiming your Four Champions selection box. Timing matters for efficient play.</li>
-        <li><strong>Inner area boxes (마을 내곽) restore 2–3 AP</strong> on open — this is NOT shown in the UI. Always do inner area boxes first every run, then outer content. You get free AP back before spending more.</li>
+        <li><strong>Inner area boxes (마을 내곽) restore 2–3 AP</strong> on open — this is NOT shown in the UI<sup class="cite"><a href="#ref-4">[4]</a></sup>. Always do inner area boxes first every run, then outer content. You get free AP back before spending more.</li>
         <li><strong>Collect your mailbox regularly.</strong> If it fills up, event deliveries stop arriving. Everything in your mailbox is hard-deleted on Aug 4 at 09:00 UTC.</li>
       </ul>
     </div>
@@ -1083,7 +1129,7 @@
 
     <h3>Where AP Comes From</h3>
     <p>AP regenerates over real time on an automatic timer. You do not need to do anything to earn it — just wait. The exact regen rate may differ slightly between KR and Global; <strong>check the in-game AP tooltip to confirm your current regen rate.</strong></p>
-    <p>Additionally: <strong>inner area boxes (마을 내곽) restore 2–3 AP instantly on open.</strong> This is hidden from the event UI. Every run in the inner area effectively gives you free AP back — which is why you always do inner boxes before outer content.</p>
+    <p>Additionally: <strong>inner area boxes (마을 내곽) restore 2–3 AP instantly on open.</strong> This is hidden from the event UI.<sup class="cite"><a href="#ref-4">[4]</a></sup> Every run in the inner area effectively gives you free AP back — which is why you always do inner boxes before outer content.</p>
 
     <h3>AP Capacity vs. AP Spent</h3>
     <p>Your AP has a <strong>maximum capacity</strong>. You cannot accumulate more AP than your cap allows. Your cap increases from two separate sources that stack:</p>
@@ -1124,9 +1170,9 @@
     <h3>Valis Village (발리스 마을)</h3>
     <p>The main event hub. Entering the village counts for daily and weekly entry missions. You do not need to clear a dungeon just to satisfy the entry requirement.</p>
     <ul>
-      <li><strong>Inner Dungeons / Village Inner Area (마을 내곽, green label):</strong> Safer zones. Boxes here restore 2–3 AP on open — do these first every run before venturing into the outer area.</li>
+      <li><strong>Inner Dungeons / Village Inner Area (마을 내곽, green label):</strong> Safer zones. Boxes here restore 2–3 AP on open — do these first every run before venturing into the outer area.<sup class="cite"><a href="#ref-4">[4]</a></sup></li>
       <li><strong>Outer Dungeons (purple label):</strong> Named monsters drop specific crafting materials. The <strong>Goddess Protection gauge (여신의 가호)</strong> drains here — hitting zero forces you back to the village. The gauge refills when you return to the village.</li>
-      <li><strong>Hidden Heavenly Station:</strong> Additional material source inside the outer area. To count for Hidden Area Discovery, you must interact with NPC <strong>Ricar</strong> inside — just entering the zone does not count.</li>
+      <li><strong>Hidden Heavenly Station:</strong> Additional material source inside the outer area. To count for Hidden Area Discovery, you must interact with NPC <strong>Ricar</strong> inside — just entering the zone does not count.<sup class="cite"><a href="#ref-4">[4]</a></sup></li>
     </ul>
 
     <div class="tip">
@@ -1141,7 +1187,7 @@
 
     <div class="tip">
       <div class="tip-label">Portal Re-roll</div>
-      Don't like the portal layout? Exit the village and re-enter. Portals (이세계 포탈) randomize on each entry. There is no penalty for retreating. KR players used this to route efficiently to their desired boss positions — if the 3 o'clock portal is poorly placed, just re-enter.
+      Don't like the portal layout? Exit the village and re-enter. Portals (이세계 포탈) randomize on each entry. There is no penalty for retreating. KR players used this to route efficiently to their desired boss positions<sup class="cite"><a href="#ref-4">[4]</a></sup> — if the 3 o'clock portal is poorly placed, just re-enter.
     </div>
 
     <h3>Four Champions (Heavenly Kings) Dungeon</h3>
@@ -1163,15 +1209,15 @@
     <h3>Demon King Dungeon — Valarod (발라로드)</h3>
     <ul>
       <li>Objective: deal as much cumulative damage as possible within a time limit.</li>
-      <li>Three phases. <strong>Phase 3 Valarod is immortal</strong> — you cannot kill him. If the timer expires in Phase 3, the run ends as "dungeon burial" but rewards are still based on total accumulated damage.</li>
-      <li>Weekly cumulative damage thresholds: <strong>20M / 35M / 70M / 100M / 300M / 450M / 600M / 800M / 1B</strong> — nine milestones total. Each awards rewards; know which you can realistically hit each week.</li>
+      <li>Three phases. <strong>Phase 3 Valarod is immortal</strong> — you cannot kill him.<sup class="cite"><a href="#ref-4">[4]</a></sup> If the timer expires in Phase 3, the run ends as "dungeon burial" but rewards are still based on total accumulated damage.</li>
+      <li>Weekly cumulative damage thresholds: <strong>20M / 35M / 70M / 100M / 300M / 450M / 600M / 800M / 1B</strong><sup class="cite"><a href="#ref-1">[1]</a></sup> — nine milestones total. Each awards rewards; know which you can realistically hit each week.</li>
       <li>A <strong>"Rooted Curse" debuff</strong> is applied to the player; the exact debuff changes week to week. Late phases apply an ongoing <strong>HP drain debuff</strong> — sustain or buffer classes handle this better. Not critical for early weeks but matters for the 1B cumulative damage milestone.</li>
     </ul>
 
     <!-- ============================================================ -->
     <h2 id="maps">Maps &amp; Routing</h2>
 
-    <p>The weekly map layout rotates <strong>Thursday to Wednesday</strong> — not daily, not Monday. Each week's map is fixed for the full Thursday–Wednesday cycle.</p>
+    <p>The weekly map layout rotates <strong>Thursday to Wednesday</strong> — not daily, not Monday.<sup class="cite"><a href="#ref-2">[2]</a></sup> Each week's map is fixed for the full Thursday–Wednesday cycle.</p>
 
     <h3>Community Map Resources</h3>
     <ul>
@@ -1183,14 +1229,47 @@
       </li>
     </ul>
 
+    <h3 id="day-maps">Day-by-Day Map Layouts</h3>
+    <p class="dim">Map images from KR community routing guide (dcinside dfip post 3151364, mirrored via <a href="https://df.nexon.com/community/dnfboard/article/2959280" target="_blank" rel="noopener">Nexon DFO community</a>). KR event days are shifted 3 days forward on DFO Global: KR Saturday = Global Tuesday, KR Sunday = Global Wednesday, and so on.</p>
+    <div class="day-maps-grid">
+      <figure class="day-map">
+        <figcaption>Sunday <span class="kr-day">(KR Thursday / 목요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/ca015934-ec41-c0b6-4806-c84a21ed396d.png" alt="Map layout for DFO Global Sunday (KR Thursday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Monday <span class="kr-day">(KR Friday / 금요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/a100fa6f-354b-47e1-4f52-44dd69553b02.png" alt="Map layout for DFO Global Monday (KR Friday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Tuesday <span class="kr-day">(KR Saturday / 토요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/62a626af-d960-e9f1-e4eb-2d7c7dcb755b.png" alt="Map layout for DFO Global Tuesday (KR Saturday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Wednesday <span class="kr-day">(KR Sunday / 일요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/3f36a170-24a2-f8db-670f-886f28aae00e.png" alt="Map layout for DFO Global Wednesday (KR Sunday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Thursday <span class="kr-day">(KR Monday / 월요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/8b7311c8-5e5e-e4b8-e2fa-cd90c51f62f8.png" alt="Map layout for DFO Global Thursday (KR Monday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Friday <span class="kr-day">(KR Tuesday / 화요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/b157b495-3430-8f74-6620-df14fc704731.png" alt="Map layout for DFO Global Friday (KR Tuesday)" loading="lazy">
+      </figure>
+      <figure class="day-map">
+        <figcaption>Saturday <span class="kr-day">(KR Wednesday / 수요일)</span></figcaption>
+        <img src="https://bbscdn.df.nexon.com/data7/commu/202510/bf3a5743-0b26-d814-22b5-344adc7a381d.png" alt="Map layout for DFO Global Saturday (KR Wednesday)" loading="lazy">
+      </figure>
+    </div>
+
     <h3>Recipe Drop Positions Are Fixed</h3>
-    <p>Recipe drop locations are <strong>fixed regardless of day</strong> — they do not rotate with the map. A recipe you have already collected will not drop again. Because recipe positions are fixed, you can plan your collection order once and repeat the same route all week. Use dfgear or the dcinside map images to identify recipe locations relative to the current week's portal layout, then run the same optimized path each day.</p>
+    <p>Recipe drop locations are <strong>fixed regardless of day</strong><sup class="cite"><a href="#ref-2">[2]</a></sup> — they do not rotate with the map. A recipe you have already collected will not drop again. Because recipe positions are fixed, you can plan your collection order once and repeat the same route all week. Use dfgear or the dcinside map images to identify recipe locations relative to the current week's portal layout, then run the same optimized path each day.</p>
 
     <!-- ============================================================ -->
     <h2 id="class-advice">Class Advice</h2>
     <p>Because gear stats are zeroed, raw class innate multipliers determine your damage. Two optimal approaches:</p>
     <ul>
-      <li><strong>Buffer class (Crusader or Enchantress recommended):</strong> Innate party buffs still work even with zeroed gear — the buff multipliers come from the class itself, not from equipment. A buffer in no gear outperforms most DPS classes in full gear inside the event dungeon. KR community guides universally recommend starting here if you have one leveled.</li>
+      <li><strong>Buffer class (Crusader or Enchantress recommended):</strong> Innate party buffs still work even with zeroed gear — the buff multipliers come from the class itself, not from equipment. A buffer in no gear outperforms most DPS classes in full gear inside the event dungeon. KR community guides universally recommend starting here if you have one leveled.<sup class="cite"><a href="#ref-4">[4]</a></sup></li>
       <li><strong>No buffer:</strong> Use a class with wide AoE to clear rooms efficiently. Maximize coverage over single-target damage.</li>
     </ul>
     <p>AP thresholds to target: <strong>20 AP</strong> guarantees boss access (Week 1 goal). <strong>30+ AP</strong> is comfortable for full outer-area runs hitting all three boss positions (Week 2 goal after +5 AP recipe).</p>
@@ -1370,7 +1449,7 @@
     </table>
 
     <h3>Hidden Area Discovery (5 / 10 / 15 / 20 / 25)</h3>
-    <p><strong>Must interact with NPC Ricar inside the hidden area</strong> for it to count. Entering the zone is not enough. KR players discovered multiple runs weren't counting because they cleared rooms without triggering Ricar's dialogue.</p>
+    <p><strong>Must interact with NPC Ricar inside the hidden area</strong> for it to count. Entering the zone is not enough. KR players discovered multiple runs weren't counting because they cleared rooms without triggering Ricar's dialogue.<sup class="cite"><a href="#ref-4">[4]</a></sup></p>
     <table>
       <thead><tr><th>Milestone</th><th>Reward</th></tr></thead>
       <tbody>
@@ -1782,7 +1861,7 @@
 
     <!-- ============================================================ -->
     <h2 id="kr-reference">KR Event Reference</h2>
-    <p>DFO Global's "Go! Isekai Hero" is based on the Korean "도전! 이세계 용사" (Challenge! Isekai Hero) event that ran on KDnF <strong>October 2 – November 12, 2024</strong> (6 full weeks). The Global version launched approximately 8 months later on June 23, 2026, and uses the same 6-week structure, the same boss roster, the same OOPArt/Conquest Road loop, and the same reward tiers. KR community discoveries — documented in KR forum threads from October–November 2024 — are the source of most mechanics and tricks in this guide.</p>
+    <p>DFO Global's "Go! Isekai Hero" is based on the Korean "도전! 이세계 용사" (Challenge! Isekai Hero) event that ran on KDnF <strong>October 2 – November 12, 2024</strong> (6 full weeks)<sup class="cite"><a href="#ref-1">[1]</a></sup>. The Global version launched approximately 8 months later on June 23, 2026, and uses the same 6-week structure, the same boss roster, the same OOPArt/Conquest Road loop, and the same reward tiers. KR community discoveries — documented in KR forum threads from October–November 2024 — are the source of most mechanics and tricks in this guide.</p>
 
     <p>Boss drop positions in the outer area: <strong>1 o'clock</strong> = Ominous Traces (불길한흔적), <strong>3 o'clock</strong> = Essence of Malice (악의정수, hardest to reach, best drops), <strong>5–7 o'clock</strong> = Dark Light (어두운빛). The 3 o'clock boss is the routing target when your AP and Goddess Protection timer allow.</p>
 
@@ -1796,7 +1875,17 @@
       </tbody>
     </table>
 
-    <p class="dim">Some Conquest Road milestone details may differ between KR and Global. The KR Object Discovery track used 10/30/50/70/90; Global uses 20/40/60/80/100 (confirmed). The exact AP regen rate may differ slightly — confirm the tooltip in-game.</p>
+    <p class="dim">Some Conquest Road milestone details may differ between KR and Global. The KR Object Discovery track used 10/30/50/70/90; Global uses 20/40/60/80/100 (confirmed)<sup class="cite"><a href="#ref-1">[1]</a></sup>. The exact AP regen rate may differ slightly — confirm the tooltip in-game.</p>
+
+    <!-- ============================================================ -->
+    <h2 id="references">Sources &amp; References</h2>
+    <ol class="references-list">
+      <li id="ref-1">DFO Archive — English translation of the KR "도전! 이세계 용사" event (October 2024): <a href="https://dfoarchive.blogspot.com/2025/10/korea-challenge-another-world-hero-event.html" target="_blank" rel="noopener">dfoarchive.blogspot.com</a>. Primary source for KR event structure, boss schedule, Conquest Road tiers, and damage thresholds.</li>
+      <li id="ref-2">dcinside 던파 마이너 갤러리, post 3151364 — "이세계 지도 맵핑 루트 (수정)" (community map routing thread, ~309k views): <a href="https://m.dcinside.com/board/dfip/3151364" target="_blank" rel="noopener">m.dcinside.com/board/dfip/3151364</a>. Seven day-by-day map layouts for a full week cycle; source for fixed recipe positions and Thursday–Wednesday rotation.</li>
+      <li id="ref-3">dfgear (던파기어) — interactive daily routing overlay: <a href="https://dfgear.com" target="_blank" rel="noopener">dfgear.com</a>. Community-maintained tool showing optimal outer-area routing for the current day's map.</li>
+      <li id="ref-4">KR community play reports and testing (dcinside 던파 마이너 갤러리 / 던파 갤러리, October–November 2024). Multiple independent community reports confirming: inner-area box AP recovery (2–3 AP per box, not displayed in UI), Ricar NPC interaction requirement for hidden area count, portal re-roll behavior (no penalty on exit/re-enter), and buffer class performance advantage in zeroed-gear event environments.</li>
+      <li id="ref-5">DFO Global official event notice — "Go! Isekai Hero" (June 23 – August 4, 2026). Source for Global mission names, coin rewards, shop prices, purchase limits, and the August 4, 09:00 UTC hard-deletion schedule. Verify current details at the official DFO Global website or in-game event panel.</li>
+    </ol>
 
     <hr>
     <div class="footer">
