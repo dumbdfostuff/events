@@ -2220,28 +2220,32 @@ const ICON_URLS = {
 
   /* --- Item Tracker ------------------------------------------ */
 
-  // Grid order: 32 cells across 4 rows × 8 columns
-  // Row 1: heavenly-blessing[0-3], eternal-journey[0-3]
-  // Row 2: a-ray-of-hope[0-3], promise-of-keys[0-2], balance-of-nature[0]
-  // Row 3: balance-of-nature[1-2], mystical-gate[0-2], starlight-dream[0-2]
-  // Row 4: starlight-dream[3], infinite-dream[0-2], time-of-destiny[0-3]
+  // Grid order: 32 cells across 4 rows × 8 columns (matches in-game collection order)
+  // Row 1: Key of Immortality, Key of Oblivion, Origin of Stars, Heavenly Promise,
+  //        Quiet Balance, Dance of Life, Forest Whisper, Song of Eternity
+  // Row 2: Gate of Heaven, Forgotten Legend, Curtain of Secrecy, Whisper of Hope,
+  //        Promise of Gold, Lost Time, Call of Mystery, Sacred Tears
+  // Row 3: Sacred Wind, Starlight Legacy, Journey of Dreams, Pact of Twilight,
+  //        Spirit Wave, Guardian of Eternity, Endless Journey, Infinite Light
+  // Row 4: Infinite Voyage, Fragment of Dream, Pact of Light, Shining Hope,
+  //        Blessing of Dawn, Shadow of Fate, Guide of Destiny, Milestone of Time
   var ITEM_TRACKER_ORDER = [
-    { id: 'heavenly-blessing', idx: 0 }, { id: 'heavenly-blessing', idx: 1 },
-    { id: 'heavenly-blessing', idx: 2 }, { id: 'heavenly-blessing', idx: 3 },
-    { id: 'eternal-journey',   idx: 0 }, { id: 'eternal-journey',   idx: 1 },
-    { id: 'eternal-journey',   idx: 2 }, { id: 'eternal-journey',   idx: 3 },
-    { id: 'a-ray-of-hope',     idx: 0 }, { id: 'a-ray-of-hope',     idx: 1 },
-    { id: 'a-ray-of-hope',     idx: 2 }, { id: 'a-ray-of-hope',     idx: 3 },
-    { id: 'promise-of-keys',   idx: 0 }, { id: 'promise-of-keys',   idx: 1 },
-    { id: 'promise-of-keys',   idx: 2 }, { id: 'balance-of-nature',  idx: 0 },
-    { id: 'balance-of-nature',  idx: 1 }, { id: 'balance-of-nature',  idx: 2 },
-    { id: 'mystical-gate',     idx: 0 }, { id: 'mystical-gate',     idx: 1 },
-    { id: 'mystical-gate',     idx: 2 }, { id: 'starlight-dream',   idx: 0 },
-    { id: 'starlight-dream',   idx: 1 }, { id: 'starlight-dream',   idx: 2 },
-    { id: 'starlight-dream',   idx: 3 }, { id: 'infinite-dream',    idx: 0 },
-    { id: 'infinite-dream',    idx: 1 }, { id: 'infinite-dream',    idx: 2 },
-    { id: 'time-of-destiny',   idx: 0 }, { id: 'time-of-destiny',   idx: 1 },
-    { id: 'time-of-destiny',   idx: 2 }, { id: 'time-of-destiny',   idx: 3 }
+    { id: 'promise-of-keys',   idx: 0 }, { id: 'promise-of-keys',   idx: 1 },  // Key of Immortality, Key of Oblivion
+    { id: 'promise-of-keys',   idx: 2 }, { id: 'heavenly-blessing', idx: 0 },  // Origin of Stars, Heavenly Promise
+    { id: 'balance-of-nature', idx: 0 }, { id: 'balance-of-nature', idx: 1 },  // Quiet Balance, Dance of Life
+    { id: 'balance-of-nature', idx: 2 }, { id: 'eternal-journey',   idx: 0 },  // Forest Whisper, Song of Eternity
+    { id: 'mystical-gate',     idx: 0 }, { id: 'mystical-gate',     idx: 1 },  // Gate of Heaven, Forgotten Legend
+    { id: 'mystical-gate',     idx: 2 }, { id: 'a-ray-of-hope',     idx: 0 },  // Curtain of Secrecy, Whisper of Hope
+    { id: 'starlight-dream',   idx: 0 }, { id: 'time-of-destiny',   idx: 3 },  // Promise of Gold, Lost Time
+    { id: 'heavenly-blessing', idx: 1 }, { id: 'heavenly-blessing', idx: 2 },  // Call of Mystery, Sacred Tears
+    { id: 'heavenly-blessing', idx: 3 }, { id: 'starlight-dream',   idx: 1 },  // Sacred Wind, Starlight Legacy
+    { id: 'starlight-dream',   idx: 2 }, { id: 'starlight-dream',   idx: 3 },  // Journey of Dreams, Pact of Twilight
+    { id: 'eternal-journey',   idx: 1 }, { id: 'eternal-journey',   idx: 2 },  // Spirit Wave, Guardian of Eternity
+    { id: 'eternal-journey',   idx: 3 }, { id: 'infinite-dream',    idx: 0 },  // Endless Journey, Infinite Light
+    { id: 'infinite-dream',    idx: 1 }, { id: 'infinite-dream',    idx: 2 },  // Infinite Voyage, Fragment of Dream
+    { id: 'a-ray-of-hope',     idx: 1 }, { id: 'a-ray-of-hope',     idx: 2 },  // Pact of Light, Shining Hope
+    { id: 'a-ray-of-hope',     idx: 3 }, { id: 'time-of-destiny',   idx: 0 },  // Blessing of Dawn, Shadow of Fate
+    { id: 'time-of-destiny',   idx: 1 }, { id: 'time-of-destiny',   idx: 2 }   // Guide of Destiny, Milestone of Time
   ];
 
   function itemTrackerKey(setId, idx) {
